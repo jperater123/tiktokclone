@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
    
@@ -22,6 +22,9 @@
    </header>
 
    <div class="page">
+    <div class="play_btn vid1">
+        <i class="fa-solid fa-play"></i>
+    </div>
    <div class="components">
     <ul>
         <li><i class="fa-solid fa-circle-user"></i><i class="fa-solid fa-circle-plus"></i></li>
@@ -35,7 +38,7 @@
 
 
    <div class="content">
-    <video autoplay loop src="img/vid1.mp4"></video>
+    <video autoplay loop src="img/vid1.mp4" data-target=".vid1"></video>
    </div>
    <div class="caption">
     <div class="title">
@@ -49,6 +52,9 @@
 
    <!-- Next page -->
    <div class="page">
+    <div class="play_btn vid2">
+        <i class="fa-solid fa-play"></i>
+    </div>
     <div class="components">
      <ul>
          <li><i class="fa-solid fa-circle-user"></i><i class="fa-solid fa-circle-plus"></i></li>
@@ -62,7 +68,7 @@
  
  
     <div class="content">
-     <video autoplay loop src="img/beach_vid.mp4"></video>
+     <video autoplay loop src="img/beach_vid.mp4" data-target=".vid2"></video>
     </div>
     <div class="caption">
      <div class="title">
@@ -83,5 +89,12 @@
         <li><i class="fa-regular fa-user"></i><br>Profile</li>
     </ul>
 </div>
+
+<script
+			  src="https://code.jquery.com/jquery-3.7.1.min.js"
+			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			  crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
