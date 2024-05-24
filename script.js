@@ -20,5 +20,33 @@ $(document).ready(function(){
         }
     });
 
+    // onclick liked
+    $('.fa-solid.fa-heart').click(function(){
+        if($(this).hasClass('liked')){
+            $(this).removeClass('liked');
+            $(this).css('color','#FFF');
+        }
+        else{
+            console.log('liked');
+            $(this).css('color','red');
+            $(this).addClass('liked');
+        }
+
+    });
+
+    // onclick bookmark
+    $('.fa-solid.fa-bookmark').click(function(){
+        if($(this).hasClass('saved')){
+            $(this).removeClass('saved');
+            $(this).css('color','#FFF');
+        }
+        else{
+            console.log('liked');
+            $(this).css('color','yellow');
+            $(this).addClass('saved');
+        }
+
+    });
+
 
 });

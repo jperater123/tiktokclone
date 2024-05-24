@@ -113,6 +113,9 @@ nav ul li:hover::after{
     color: #FFF;
     display: none;
 }
+.fa-solid.fa-heart:hover{
+    color: red !important;
+}
 
 /* content */
 .content{
